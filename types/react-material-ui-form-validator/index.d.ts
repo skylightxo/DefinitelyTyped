@@ -11,7 +11,7 @@ import { SelectFieldProps, TextFieldProps } from 'material-ui';
 
 export interface ValidatorFormProps {
     className?: string;
-    onSubmit: (event: React.FormEvent) => void;
+    onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
     instantValidate?: boolean;
     onError?: (errors: any[]) => void;
     debounceTime?: number;
